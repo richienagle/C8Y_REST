@@ -3,21 +3,21 @@
 ### Directory Structure ###
 C8Y_REST/
 - C8Y_Demo.py 
-* customize info in lines 12-17 and execute: 
-* $ python3  C8Y_Demo.py
-* if it's the first time, you must register the device name at https://<your tenant>.us.cumulocity.com/apps devicemanagement/index.html#/deviceregistration.  Otherwise, a device.properties file will exist with device credentials
+customize info in lines 12-17 and execute: 
+$ python3  C8Y_Demo.py
+if it's the first time, you must register the device name at https://<your tenant>.us.cumulocity.com/apps devicemanagement/index.html#/deviceregistration.  Otherwise, a device.properties file will exist with device credentials
 - C8Y_Device.py 					
-*Cumulocity device class, haddles registration, credentials, and externalId 
+Cumulocity device class, haddles registration, credentials, and externalId 
 - HTTPHandle.py		
-* functions to send measurements and events
+functions to send measurements and events
 - Device_Operations_Handler.py 	
-* handles long polling subscription and operations
+handles long polling subscription and operations
 - Cumulocity API.postman_collection.json
-* Postman collection for REST APIs
+Postman collection for REST APIs
 - device.properties				
-* credentials created upon registration, if device is deleted then delete this file and re-run REST_Demo.py
+credentials created upon registration, if device is deleted then delete this file and re-run REST_Demo.py
 - info.log						
-* generic text file, read only to show log retreval operation
+generic text file, read only to show log retreval operation
 
 ### How to use ###
 1. Change lines 12 & 16 of GatewayDemo.py, the externalId on line 16 must be unique, only one of these can exist among devices in Cumulocity.
