@@ -1,4 +1,5 @@
 
+Note:  This is for python3.  The requests library will need to be added in order for this to run.
 
 ### Directory Structure ###
 C8Y_REST/
@@ -21,7 +22,7 @@ generic text file, read only to show log retreval operation
 
 ### How to use ###
 1. Change lines 12 & 16 of GatewayDemo.py, the externalId on line 16 must be unique, only one of these can exist among devices in Cumulocity.
-2. execute:
+2. To execute, install 'requests' library and then run:
 	$ python3 C8Y_Demo.py
 3. Go to https://<your tenant>.us.cumulocity.com/apps devicemanagement/index.html#/deviceregistration and register the device name that's in line 15 of C8Y_Demo.py
 4. It will register the device and externalId, and update property info. Customized properties can be added.
