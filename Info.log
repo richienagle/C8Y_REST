@@ -1,0 +1,310 @@
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.2.0 (buildbot@buildbot03) (gcc version 4.9.3 (crosstool-NG crosstool-ng-1.22.0) ) #1 Wed Sep 25 11:10:44 AEST 2019
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: am335xevm
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] On node 0 totalpages: 65536
+[    0.000000] free_area_init_node: node 0, pgdat c05bf924, node_mem_map c060d000
+[    0.000000]   Normal zone: 512 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 65024 pages, LIFO batch:15
+[    0.000000] AM335X ES2.0 (neon )
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 65024
+[    0.000000] Kernel command line: console=ttyO0,115200n8 noinitrd rootwait=1 root=ubi0:rootfs rw ubi.mtd=root,4096 rootfstype=ubifs mtdparts=omap2-nand.0:0x000000300000(S1S2EN),0x000000500000(rkern),0x000000f00000(rfs),0x000000500000(kernel),0x000003000000(root),0x000002000000(usr),0x000019400000(opt)
+[    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] allocated 1048576 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] Memory: 256MB = 256MB total
+[    0.000000] Memory: 252636k/252636k available, 9508k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xd0800000 - 0xff000000   ( 744 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xd0000000   ( 256 MB)
+[    0.000000]     modules : 0xbf000000 - 0xc0000000   (  16 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc0546820   (5371 kB)
+[    0.000000]       .init : 0xc0547000 - 0xc057c000   ( 212 kB)
+[    0.000000]       .data : 0xc057c000 - 0xc05cc8a0   ( 323 kB)
+[    0.000000]        .bss : 0xc05cc8c4 - 0xc060c544   ( 256 kB)
+[    0.000000] NR_IRQS:410 nr_irqs:410 410
+[    0.000000] IRQ: Found an INTC at 0xfa200000 (revision 5.0) with 128 interrupts
+[    0.000000] Total of 128 interrupts on 1 active controller
+[    0.000000] OMAP clockevent source: GPTIMER2 at 24000000 Hz
+[    0.000000] OMAP clocksource: GPTIMER1 at 32768 Hz
+[    0.000000] sched_clock: 32 bits at 32kHz, resolution 30517ns, wraps every 131071999ms
+[    0.000091] Calibrating delay loop... 498.89 BogoMIPS (lpj=2494464)
+[    0.059204] pid_max: default: 32768 minimum: 301
+[    0.059387] Security Framework initialized
+[    0.059509] Mount-cache hash table entries: 512
+[    0.059936] Initializing cgroup subsys cpuacct
+[    0.059997] Initializing cgroup subsys memory
+[    0.060028] Initializing cgroup subsys devices
+[    0.060058] Initializing cgroup subsys freezer
+[    0.060058] Initializing cgroup subsys blkio
+[    0.060089] Initializing cgroup subsys perf_event
+[    0.060211] CPU: Testing write buffer coherency: ok
+[    0.061370] devtmpfs: initialized
+[    0.062896] EVM: security.capability
+[    0.082366] omap_hwmod: gfx: failed to hardreset
+[    0.099273] omap_hwmod: pruss: failed to hardreset
+[    0.099914] print_constraints: dummy: 
+[    0.100189] NET: Registered protocol family 16
+[    0.101470] OMAP GPIO hardware version 0.1
+[    0.102630] omap_mux_init: Add partition: #1: core, flags: 0
+[    0.103912] Board: NetComm Kewel
+[    0.103942] IOBoard: clarke
+[    0.103942] [T22]board_kewel_gpio_init:840: (profile=04000040)
+[    0.103973] [T22]ioboard_clarke_gpio_init:849: (profile=04000040)
+[    0.106567] [T22]evm_nand_init:1064: (profile=04000040)
+[    0.107055] [T22]led_init:1676: (profile=04000040), 16 LEDs
+[    0.107177] [T22]PHY_bitbang:870: (profile=04000040)
+[    0.107269] [T22]PHY_setup:892: (profile=04000040)
+[    0.107269] [T22]rgmii1_init:922: (profile=04000040)
+[    0.107452] [T22]rgmii_init:958: (profile=04000040)
+[    0.107788] [T22]usb0_init:1013: (profile=04000040)
+[    0.107818] [T22]usb1_init:1016: (profile=04000040)
+[    0.107971] [T22]clarke_uart1_init:1028: (profile=04000040)
+[    0.108093] [T22]i2c1_init:1271: (profile=04000040)
+[    0.108184]  omap_i2c.2: alias fck already exists
+[    0.108276] [T22]i2c0_gpio_init:1708: (profile=04000040)
+[    0.109069] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.109252]  omap2_mcspi.1: alias fck already exists
+[    0.109375]  omap2_mcspi.2: alias fck already exists
+[    0.109558]  edma.0: alias fck already exists
+[    0.109588]  edma.0: alias fck already exists
+[    0.109619]  edma.0: alias fck already exists
+[    0.118896] bio: create slab <bio-0> at 0
+[    0.120330] SCSI subsystem initialized
+[    0.121368] usbcore: registered new interface driver usbfs
+[    0.121520] usbcore: registered new interface driver hub
+[    0.121704] usbcore: registered new device driver usb
+[    0.122070] registerd cppi-dma Intr @ IRQ 17
+[    0.122070] Cppi41 Init Done Qmgr-base(d087a000) dma-base(d0878000)
+[    0.122100] Cppi41 Init Done
+[    0.122131] musb-ti81xx musb-ti81xx: musb0, board_mode=0x13, plat_mode=0x3
+[    0.122314] musb-ti81xx musb-ti81xx: musb1, board_mode=0x13, plat_mode=0x1
+[    0.123687] tps65910 1-002d: JTAGREVNUM 0x0
+[    0.127197] print_constraints: VRTC: 
+[    0.128875] print_constraints: VIO: at 1500 mV 
+[    0.131683] print_constraints: VDD1: 600 <--> 1500 mV at 1100 mV normal 
+[    0.134368] print_constraints: VDD2: at 1100 mV 
+[    0.134582] print_constraints: VDD3: 5000 mV normal 
+[    0.136199] print_constraints: VDIG1: at 1800 mV 
+[    0.137847] print_constraints: VDIG2: at 1800 mV 
+[    0.139495] print_constraints: VPLL: at 1800 mV 
+[    0.141143] print_constraints: VDAC: at 1800 mV 
+[    0.142822] print_constraints: VAUX1: at 1800 mV 
+[    0.144439] print_constraints: VAUX2: at 3300 mV 
+[    0.146087] print_constraints: VAUX33: at 3300 mV 
+[    0.147766] print_constraints: VMMC: at 3300 mV 
+[    0.148071] tps65910 1-002d: No interrupt support, no core IRQ
+[    0.148223] i2c-gpio i2c-gpio.1: using pins 101 (SDA) and 102 (SCL)
+[    0.159942] omap_i2c omap_i2c.2: bus 2 rev2.4.0 at 100 kHz
+[    0.161437] Switching to clocksource gp timer
+[    0.163085] musb-hdrc: version 6.0, ?dma?, otg (peripheral+host)
+[    0.163299] musb-hdrc.0: GPIO0_2 is assigned for USB0_ID
+[    0.163330] musb-hdrc musb-hdrc.0: dma type: dma-cppi41
+[    0.163513] MUSB0 controller's USBSS revision = 4ea20800
+[    0.163543] musb-hdrc.0: GPIO USB ID is available, apply register USB ID mode based on the GPIO
+[    0.163574] musb-hdrc.0: set USB ID to B mode
+[    0.163574] musb-hdrc.0: usb id detected (usb_id=1)
+[    0.163604] TxFifo Empty intr disabled
+[    0.163604] musb0: Enabled SW babble control
+[    0.164001] musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine, bulk split, HB-ISO Rx, HB-ISO Tx, SoftConn)
+[    0.164001] musb-hdrc: MHDRC RTL version 2.0 
+[    0.164031] musb-hdrc: setup fifo_mode 4
+[    0.164062] musb-hdrc: 28/31 max ep, 16384/16384 memory
+[    0.164520] musb-hdrc musb-hdrc.0: USB OTG mode controller at d083c000 using DMA, IRQ 18
+[    0.164825] musb-hdrc musb-hdrc.1: dma type: dma-cppi41
+[    0.165008] MUSB1 controller's USBSS revision = 4ea20800
+[    0.165039] TxFifo Empty intr disabled
+[    0.165039] musb1: Enabled SW babble control
+[    0.165405] musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine, bulk split, HB-ISO Rx, HB-ISO Tx, SoftConn)
+[    0.165435] musb-hdrc: MHDRC RTL version 2.0 
+[    0.165435] musb-hdrc: setup fifo_mode 4
+[    0.165466] musb-hdrc: 28/31 max ep, 16384/16384 memory
+[    0.165557] musb-hdrc.1: busnumber preference is 2
+[    0.165588] musb-hdrc musb-hdrc.1: MUSB HDRC host driver
+[    0.165618] musb-hdrc musb-hdrc.1: busnum preference applied, preference busnum=2,busnum=2
+[    0.165710] drivers/usb/core/inode.c: creating file 'devices'
+[    0.165740] drivers/usb/core/inode.c: creating file '002'
+[    0.165740] musb-hdrc musb-hdrc.1: new USB bus registered, assigned bus number 2
+[    0.165802] musb-hdrc musb-hdrc.1: supports USB remote wakeup
+[    0.165893] usb usb2: default language 0x0409
+[    0.165924] usb usb2: udev 1, busnum 2, minor = 128
+[    0.165954] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.165954] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.165985] usb usb2: Product: MUSB HDRC host driver
+[    0.165985] usb usb2: Manufacturer: Linux 3.2.0 musb-hcd
+[    0.166015] usb usb2: SerialNumber: musb-hdrc.1
+[    0.166595] usb usb2: usb_probe_device
+[    0.166625] usb usb2: configuration #1 chosen from 1 choice
+[    0.166656] usb usb2: adding 2-0:1.0 (config #1, interface 0)
+[    0.166870] hub 2-0:1.0: usb_probe_interface
+[    0.166870] hub 2-0:1.0: usb_probe_interface - got id
+[    0.166900] hub 2-0:1.0: USB hub found
+[    0.166931] hub 2-0:1.0: 1 port detected
+[    0.166961] hub 2-0:1.0: standalone hub
+[    0.166961] hub 2-0:1.0: individual port power switching
+[    0.166992] hub 2-0:1.0: no over-current protection
+[    0.166992] hub 2-0:1.0: Single TT
+[    0.167022] hub 2-0:1.0: TT requires at most 8 FS bit times (666 ns)
+[    0.167022] hub 2-0:1.0: power on to power good time: 10ms
+[    0.167053] hub 2-0:1.0: local power source is good
+[    0.167083] hub 2-0:1.0: enabling power on all ports
+[    0.167419] drivers/usb/core/inode.c: creating file '001'
+[    0.167633] musb-hdrc musb-hdrc.1: USB Host mode controller at d083e800 using DMA, IRQ 19
+[    0.168060] NET: Registered protocol family 2
+[    0.168304] IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.168792] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.169036] TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.169158] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.169189] TCP reno registered
+[    0.169189] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.169219] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.169555] NET: Registered protocol family 1
+[    0.170013] RPC: Registered named UNIX socket transport module.
+[    0.170043] RPC: Registered udp transport module.
+[    0.170074] RPC: Registered tcp transport module.
+[    0.170074] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.170379] omap-gpmc omap-gpmc: GPMC revision 6.0
+[    0.170410] Registering NAND on CS0
+[    0.170989] cpuidle-am33xx cpuidle-am33xx.0: failed to register driver
+[    0.182128] VFS: Disk quotas dquot_6.5.2
+[    0.182220] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.182464] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.182556] Registering unionfs 2.5.11 (for 3.2.2)
+[    0.183013] JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.183349] msgmni has been set to 493
+[    0.184967] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    0.184997] io scheduler noop registered (default)
+[    0.261871] hub 2-0:1.0: state 7 ports 1 chg 0000 evt 0000
+[    0.268066] omap_uart.0: ttyO0 at MMIO 0x44e09000 (irq = 72) is a OMAP UART0
+[    1.124786] console [ttyO0] enabled
+[    1.129150] omap_uart.1: ttyO1 at MMIO 0x48022000 (irq = 73) is a OMAP UART1
+[    1.137023] omap_uart.2: ttyO2 at MMIO 0x48024000 (irq = 74) is a OMAP UART2
+[    1.144836] omap_uart.3: ttyO3 at MMIO 0x481a6000 (irq = 44) is a OMAP UART3
+[    1.152648] omap_uart.4: ttyO4 at MMIO 0x481a8000 (irq = 45) is a OMAP UART4
+[    1.160430] omap_uart.5: ttyO5 at MMIO 0x481aa000 (irq = 46) is a OMAP UART5
+[    1.169403] brd: module loaded
+[    1.176971] loop: module loaded
+[    1.180633] ti_tscadc:Value set clk_value=600
+[    1.186737] omap2-nand driver initializing
+[    1.191528] NAND device: Manufacturer ID: 0x98, Chip ID: 0xac (Toshiba NAND 512MiB 1,8V 8-bit)
+[    1.200653] 7 cmdlinepart partitions found on MTD device omap2-nand.0
+[    1.207397] Creating 7 MTD partitions on "omap2-nand.0":
+[    1.212982] 0x000000000000-0x000000300000 : "S1S2EN"
+[    1.219451] 0x000000300000-0x000000800000 : "rkern"
+[    1.226318] 0x000000800000-0x000001700000 : "rfs"
+[    1.235656] 0x000001700000-0x000001c00000 : "kernel"
+[    1.242553] 0x000001c00000-0x000004c00000 : "root"
+[    1.260864] 0x000004c00000-0x000006c00000 : "usr"
+[    1.274810] 0x000006c00000-0x000020000000 : "opt"
+[    1.406097] GPIO Bitbanged MDIO: probed
+[    1.410217] SLIP: version 0.8.4-NET3.019-NEWTTY (dynamic channels, max=256).
+[    1.418365] usbcore: registered new interface driver cdc_acm
+[    1.424316] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.432769] usbcore: registered new interface driver cdc_wdm
+[    1.438751] usbcore: registered new interface driver uas
+[    1.444305] Initializing USB Mass Storage driver...
+[    1.449554] usbcore: registered new interface driver usb-storage
+[    1.455841] USB Mass Storage support registered.
+[    1.460784] usbcore: registered new interface driver libusual
+[    1.468078] am33xx-rtc: dev (254:0)
+[    1.468139] omap_rtc am33xx-rtc: rtc core: registered am33xx-rtc as rtc0
+[    1.475372] i2c /dev entries driver
+[    1.479461] Driver for 1-wire Dallas network protocol.
+[    1.485076] 1-Wire driver for the DS2760 battery monitor  chip  - (c) 2004-2005, Szabolcs Gyurko
+[    1.495056] OMAP Watchdog Timer Rev 0x01: initial timeout 60 sec
+[    1.506683] Registered led device: led1r
+[    1.506774] Registered led device: led1g
+[    1.506866] Registered led device: led2r
+[    1.506958] Registered led device: led2g
+[    1.507019] Registered led device: led3r
+[    1.507110] Registered led device: led3g
+[    1.507202] Registered led device: led4r
+[    1.507293] Registered led device: led4g
+[    1.507354] Registered led device: led5r
+[    1.507446] Registered led device: led5g
+[    1.507537] Registered led device: led6r
+[    1.507598] Registered led device: led6g
+[    1.507720] Registered led device: led7r
+[    1.507781] Registered led device: led7g
+[    1.507873] Registered led device: led8r
+[    1.507965] Registered led device: led8g
+[    1.508056] ledtrig-cdcs: Registering CDCS LED trigger group. (Sep 25 2019 11:09:46)
+[    1.516418] Netfilter messages via NETLINK v0.30.
+[    1.521484] nf_conntrack version 0.5.0 (3947 buckets, 15788 max)
+[    1.528106] ctnetlink v0.93: registering with nfnetlink.
+[    1.533782] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+[    1.541076] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+[    1.547485] xt_time: kernel timezone is -0000
+[    1.552124] IPv4 over IPv4 tunneling driver
+[    1.557220] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    1.563018] ipt_CLUSTERIP: ClusterIP Version 0.8 loaded successfully
+[    1.569763] arp_tables: (C) 2002 David S. Miller
+[    1.574707] TCP cubic registered
+[    1.578125] Initializing XFRM netlink socket
+[    1.582763] NET: Registered protocol family 10
+[    1.588195] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    1.594116] IPv6 over IPv4 tunneling driver
+[    1.599578] NET: Registered protocol family 17
+[    1.604309] NET: Registered protocol family 15
+[    1.609039] 8021q: 802.1Q VLAN Support v1.8
+[    1.613464] lib80211: common routines for IEEE802.11 drivers
+[    1.619415] lib80211_crypt: registered algorithm 'NULL'
+[    1.619415] lib80211_crypt: registered algorithm 'WEP'
+[    1.619445] lib80211_crypt: registered algorithm 'CCMP'
+[    1.619445] lib80211_crypt: registered algorithm 'TKIP'
+[    1.619445] Registering the dns_resolver key type
+[    1.624450] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    1.632537] ThumbEE CPU extension supported.
+[    1.637084] mux: Failed to setup hwmod io irq -22
+[    1.642639] Power Management for AM33XX family
+[    1.647491] Trying to load am335x-pm-firmware.bin (60 secs timeout)
+[    1.654205] Copied the M3 firmware to UMEM
+[    1.658599] Cortex M3 Firmware Version = 0x186
+[    1.663269] clock: disabling unused clocks to save power
+[    1.669433] registered taskstats version 1
+[    1.675476] EVM: Error registering secfs
+[    1.680633] UBI: attaching mtd4 to ubi0
+[    2.106384] UBI: scanning is finished
+[    2.123352] UBI: attached mtd4 (name "root", size 48 MiB) to ubi0
+[    2.129699] UBI: PEB size: 262144 bytes (256 KiB), LEB size: 253952 bytes
+[    2.136810] UBI: min./max. I/O unit sizes: 4096/4096, sub-page size 4096
+[    2.143798] UBI: VID header offset: 4096 (aligned 4096), data offset: 8192
+[    2.150970] UBI: good PEBs: 192, bad PEBs: 0, corrupted PEBs: 0
+[    2.157135] UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.164581] UBI: max/mean erase counter: 18/5, WL threshold: 512, image sequence number: 655278393
+[    2.173950] UBI: available PEBs: 0, total reserved PEBs: 192, PEBs reserved for bad PEB handling: 4
+[    2.183502] cpsw.0: [param] dual_emac=0
+[    2.187500] cpsw.0: [param] debug_level=0
+[    2.191680] cpsw.0: [param] rx_packet_max=1956
+[    2.196319] cpsw.0: [param] ale_ageout=60
+[    2.200500] Detected MACID=40:6:a0:e5:f7:1e
+[    2.205810] cpsw.0: procfs registered (path=/proc/driver/cpsw.0)
+[    2.212310] omap_rtc am33xx-rtc: setting system clock to 2000-01-01 00:00:01 UTC (946684801)
+[    2.223144] UBI: background thread "ubi_bgt0d" started, PID 58
+[    2.278930] UBIFS: background thread "ubifs_bgt0_0" started, PID 59
+[    2.373596] UBIFS: recovery needed
+[    2.762268] UBIFS: recovery completed
+[    2.766296] UBIFS: mounted UBI device 0, volume 0, name "rootfs"(null)
+[    2.773193] UBIFS: LEB size: 253952 bytes (248 KiB), min./max. I/O unit sizes: 4096 bytes/4096 bytes
+[    2.782806] UBIFS: FS size: 44187648 bytes (42 MiB, 174 LEBs), journal size 9404416 bytes (8 MiB, 38 LEBs)
+[    2.792968] UBIFS: reserved for root: 0 bytes (0 KiB)
+[    2.798278] UBIFS: media format: w4/r0 (latest is w4/r0), UUID 8627ED89-EAB7-469E-8344-7083ECB44B2E, small LPT model
+[    2.813354] VFS: Mounted root (ubifs filesystem) on device 0:14.
+[    2.825531] devtmpfs: mounted
+[    2.828979] Freeing init memory: 212K
+[    4.656829] udevd (114): /proc/114/oom_adj is deprecated, please use /proc/114/oom_score_adj instead.
+[    4.875457] Disabling lock debugging due to kernel taint
+[    4.881042] cdcs_DD: module license 'NetComm Wireless Proprietary' taints kernel.
+[    4.901062] Start cdcsDD
+[    4.903869] [Tea]trace_alloc:367: global init
+[    4.908447] [Tea]trace_alloc:374: tracer 'dd_write' created
