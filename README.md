@@ -1,12 +1,13 @@
 
-Note:  This is for python3.  The requests library will need to be added in order for this to run.
+Note2:  
+- This is for python3. Python3 may likely installed on your computer, but if not follow installation instructions: https://www.python.org/
+- The Python 'requests' library (https://pypi.org/project/requests/2.7.0/) will need to be added in order for this to run.
+- A free trial can be started here https://www.softwareag.cloud/site/product/cumulocity-iot.html#/
 
 ### Directory Structure ###
 C8Y_REST/
 - C8Y_Demo.py 
-customize info in lines 12-17 and execute: 
-$ python3  C8Y_Demo.py
-if it's the first time, you must register the device name at https://<your tenant>.us.cumulocity.com/apps devicemanagement/index.html#/deviceregistration.  Otherwise, a device.properties file will exist with device credentials
+customize info in lines 12-17 for your Cumulocity tenant and device name.  
 - C8Y_Device.py 					
 Cumulocity device class, haddles registration, credentials, and externalId 
 - HTTPHandle.py		
