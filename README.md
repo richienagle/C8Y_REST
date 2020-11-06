@@ -2,11 +2,11 @@
 
 ### Directory Structure ###
 C8Y_REST/
-	C8Y_Demo.py 
-		- customize info in lines 12-17 and execute: 
-		- $ python3  C8Y_Demo.py
-		- if it's the first time, you must register the device name at https://<your tenant>.us.cumulocity.com/apps devicemanagement/index.html#/deviceregistration.  Otherwise, a device.properties file will exist with device credentials
-	C8Y_Device.py 					
+- C8Y_Demo.py 
+-- customize info in lines 12-17 and execute: 
+-- $ python3  C8Y_Demo.py
+-- if it's the first time, you must register the device name at https://<your tenant>.us.cumulocity.com/apps devicemanagement/index.html#/deviceregistration.  Otherwise, a device.properties file will exist with device credentials
+- C8Y_Device.py 					
 		- Cumulocity device class, haddles registration, credentials, and externalId 
 	HTTPHandle.py		
 		- functions to send measurements and events
